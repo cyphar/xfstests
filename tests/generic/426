@@ -51,6 +51,7 @@ test_file_handles $testdir -d
 # Check non-stale handles to linked files
 create_test_files $testdir
 test_file_handles $testdir
+test_file_handles $testdir -M
 
 # Check non-stale handles to files that were hardlinked and original deleted
 create_test_files $testdir
