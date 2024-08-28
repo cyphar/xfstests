@@ -82,11 +82,13 @@ Examples:
 #include <string.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <sys/stat.h>
 #include <sys/types.h>
 #include <errno.h>
 #include <linux/limits.h>
 #include <libgen.h>
+
+#include <sys/stat.h>
+#include "statx.h"
 
 #define MAXFILES 1024
 
